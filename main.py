@@ -10,7 +10,7 @@ model = os.getenv('MODEL')
 messages = [
     {
         'role':'system',
-        'content':'You are a helpful assistant. Use provided tools wherever necessary.'
+        'content':'You are Mailo, a helpful assistant. Use provided tools wherever necessary.'
     }
 ]
 
@@ -23,7 +23,7 @@ tools = [
         'type':'function',
         'function':{
             'name':'send_email',
-            'description':'send email using gmail account of user',
+            'description':'send email using gmail account of user. DO NOT use emojis.',
             'parameters':{
                 'type':'object',
                 'properties':{
