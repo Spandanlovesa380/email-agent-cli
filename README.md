@@ -1,5 +1,5 @@
-## Send Emails From The Command Line
-This is Mailo, your helpful assistant who sends emails for you---straight from your Gmail account. 
+## Send Emails From The Terminal
+This is Mailo, your helpful assistant who sends emails for you, straight from your Gmail account. 
 
 "Send **recipient** an email asking him out on a coffee date. Make it sound cute. "
 
@@ -9,7 +9,7 @@ This is Mailo, your helpful assistant who sends emails for you---straight from y
  3. Open Google Apps Script, create a new script, paste *gmail_bridge.gs*
  4. Click 'deploy' and go through the user flow, copy the url provided.
  5. You may be prompted to give access to your inbox.
- 6. Configure .env with APP_SCRIPT_URL=url and MODEL=any local llm of your preference that you have installed and running with Ollama.
+ 6. Configure .env (model is any local llm that you have running with Ollama)
 
 ```dotenv
 APP_SCRIPT_URL=xyz  
@@ -18,7 +18,7 @@ MODEL=modelname
 
 7. Run
 
-```terminaloutput
+```bash
 python main.py
 ```
 
